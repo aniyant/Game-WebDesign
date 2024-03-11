@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shojumaru&display=swap" rel="stylesheet">
+<style>
+    body{
+        padding: 0px;
+        margin: 0px;
+        font-family: "Shojumaru", system-ui;
+    }
+    button{
+        font-size: small;
+        color: white;
+        border: 1px ridge;
+        border-radius: 10px;
+        background:linear-gradient(red,yellow);
+    }
+    header{
+        background-image: url("./Bg1.png");
+        height: 400px;
+    }
+    header nav{
+        width: 100%;
+        padding-top: 20px;
+        height: auto;
+        margin:auto;
+        display: flex;
+        gap:50px;
+        justify-content: space-around;
+    }
+    header nav>div#links{
+        width: 45%;
+        height: 40px;
+        border: 1px ridge;
+        border-radius: 10px;
+        font-size: small;
+        font-weight: 500;
+        color: white;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        background-color: #141414;
+    }
+    header nav button{
+
+    } 
+    header h3{
+        text-align: center;
+    }
+
+    main>section#introduction{
+        width: 100%;
+        height: 500px;
+        padding: 30px;
+        height: auto;
+        margin: auto;
+        color:white;
+        background-color: #0a0a0a;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #introduction img{
+        width: 100%;
+        height: 400px;
+    }
+    section#roadmap{
+        width: 90%;
+        height: 450px;
+        margin: auto;
+        background-image: url("./BG-2.png");
+    }
+    section#roadmap h2{
+        text-align: center;
+    }
+    section#roadmap div{
+        border: 1px solid red;
+        border-radius: 10px;
+        display: grid;
+        gap:10px;
+        grid-template-columns: repeat(4,1fr);
+    }
+    section#roadmap div img{
+        width: 100%;
+        height: 400px;
+    }
+    section#faq{
+        width: 100%;
+        height: 400px;
+        display: grid;
+        background-color: #141414;
+        grid-template-columns: repeat(2,1fr);
+    }
+    section#faq img{
+        width: 100%;
+        height: 400px;
+    }
+    section#faq h2{
+        text-align: center;
+    }
+    #faq p{
+        padding: 10px 30px;
+        border: 1px solid red;
+        border-radius: 10px;
+    }
+    footer{
+        padding: 20px;
+        height: 300px;
+        background-color: black;
+    }
+    footer>div:nth-child(1) img{
+        width: 100px;
+    }
+    footer>div:nth-child(1) h3{
+        font-size: medium;
+        color:white
+    }
+    footer>div:nth-child(1){
+        width: 100px;
+        margin: auto;
+    }
+
+    footer>div:nth-child(2) span{
+        font-size: small;
+        color:white
+    }
+    footer>div:nth-child(2){
+        width: 600px;
+        margin: auto;
+    }
+    footer>div:nth-child(3){
+        width: 100px;
+        margin: auto;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="log">
+                <p><img src="./Logo Savior red copy.png" alt=""> 
+                Saviour</p>
+            </div>
+            <div id="links">
+                <span>Home</span>
+                <span>IDO</span>
+                <span>Tokenomics</span>
+                <span>Roadmap</span>
+                <span>Coming Soon</span>
+            </div>
+            <div id="wallet">
+                <button>Connect wallet</button>
+            </div>
+        </nav>
+        <h3>
+            BLOCKCHAN HEROES THRIVE, RESCUING<br>
+            DREAMS, ELEVATING FORTUNES.
+        </h3>
+    </header>
+    <main>
+        <section id="introduction">
+            <div>
+                <h2>Introduction</h2>
+                <p>
+                    We've all been in the mud once, and now we've decided to fight it out.
+                    Pay tribute to those pioneers of WEB3 and the warriors who dedicated their love to the blockchain, Save the lucky ones alive, join us to save the future!
+                    Our mission is to empower everyone to share wealth and succeed.
+                    read more... 
+                </p>
+                <button>Documents</button>
+            </div>
+            <div>
+                <img src="./Image 2.png" alt="">
+            </div>
+        </section>
+        <section id="roadmap">
+            <h2>Roadmap</h2>
+            <div id="cards">
+                <img src="./card_1.png.png" alt="">
+                <img src="./card_1.png-1.png" alt="">
+                <img src="./card_1.png-2.png" alt="">
+                <img src="./card_1.png-3.png" alt="">
+            </div>
+        </section>
+        <section id="faq">
+            <div>
+                <img src="./image 3.png" alt="">
+            </div>
+            <div>
+                <h2>faq</h2>
+                <p>Why choose savior?</p>
+                <p>Why is the ido duration so long?</p>
+                <p>When will trading go live?</p>
+                <p>When can we claim the tokens?</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+        <img src="./Logo Savior red Footer.png" alt="">
+        <h3>SITEMAP</h3>
+        </div>
+        <div id="footer_links">
+            <span>Home</span>
+            <span>IDO</span>
+            <span>Tokenomics</span>
+            <span>Roadmap</span>
+            <span>Whitepape</span>
+            <span>Pledge</span>
+            <span>NFT</span>
+            <span>Games</span>
+        </div>
+        <div id="social_links">
+            <img src="./Link ÔÅÁ icon-twitter.6b3c178f26a209f13bcced7e816ba143.svg.png" alt="">
+            <img src="./icon-telegram.3e7b16fc68b2a61fe78c02f92f7a45f6.svg.png" alt="">
+            <img src="./clarity_email-solid.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>
